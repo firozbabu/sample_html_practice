@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_form_validation</title>
+</head>
+<body>
+    <!-- <form name="myform" action="css_animations.html" onsubmit="return validateform()" method="post">
+        <input type="text" id="name" name="name">
+        <button>submit</button>
+    </form>
+    <script>
+        function validateform(){
+            let x=document.forms['myform']['name'].value;
+             alert(x)
+        }
+    </script> -->
+<!-- <form id="robby">
+  <input type="button" onclick="alert(document.forms[0].id[0]);" value="robby's form" />
+</form>
+
+<form id="dave">
+  <input type="button" onclick="alert(document.forms[1].id[1]);" value="dave's form" />
+</form>
+
+<form id="paul">
+  <input type="button" onclick="alert(document.forms[2].id[2]);" value="paul's form" />
+</form> -->
+
+
+<form name="login" onsubmit="return my()">
+    <input type="email" name="email">
+    <input type="password" name="password">
+    <button type="submit">LOGIN</button>
+</form>
+<form action="#" name="first">
+
+</form>
+<form action="#" name="second"></form>
+<form action="#" name="third"></form>
+<script>
+    function my(){
+    let s=document.forms['login']//(or) document.form.login
+    s.elements.email.placeholder="example@gmail.com";
+    s.elements.password.placeholder="password";
+    document.write(s.elements.email.value);
+    document.write(s.elements.password.value);
+    let r=document.forms
+    
+}
+my();
+</script>
+</body>
+</html>

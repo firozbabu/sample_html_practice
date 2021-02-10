@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>placeholder_pseudo_element</title>
+    <script>
+        function fun(){
+            let v=document.getElementById('g');
+            if(v.type=="password"){
+                v.type="text";
+            }
+            else {
+                v.type="password";
+
+            }
+        }
+    </script>
+</head>
+<body>
+   <div class="placeholder_element">
+    
+    <form>
+        <input type="password" name="password" id="g">
+        <input type="checkbox" id="cb" name="showpassword" value="showpassword" onclick="fun()">
+        <label for="cb">showpassword</label>
+    </form>
+    </div>
+</body>
+</html>

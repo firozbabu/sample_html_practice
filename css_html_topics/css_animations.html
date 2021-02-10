@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS_ANIMATIONS</title>
+    <style>
+        @keyframes fir{
+            0% {background-color:red;
+                left:0px;
+                top:0px;
+            }
+        25%{
+                backgroud-color:black;
+                right:0px;
+                top:0px;
+            }
+        50%{
+            background-color:salmon;
+            left:200px;
+            top:200px;
+
+        }
+        75%{
+            background-color:salmon;
+            left:0px;
+            top:200px;
+        }
+        100%{
+            backgorund-color:purple;
+            left:0px;
+            top:0px;
+        }
+    }
+        div{
+            width:100px;
+            height:200px;
+            background-color:green;
+            animation-name:fir;
+            animation-duration:5s;
+            position:relative;
+            animation-direction:alternate;
+            animation-iteration-count:2;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

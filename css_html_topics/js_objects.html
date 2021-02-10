@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js_objects</title>
+</head>
+<body>
+    <script>
+        //there are two ways to create the object in js
+        let first=new Object();//this is using object construcor
+        let sec={};//this is using object literal
+        //like dict in python
+        let fir={name:"firoz",age:20};
+        //add the values using the syntax 
+        //object_name.name=value
+        fir.issi=true;
+        alert(fir.name);
+        alert(fir.age);
+        alert(fir.issi);
+        delete fir.issi;
+        document.write(fir.name,fir.age,fir.issi);
+        //we cam also use mutiword as a key in object
+        //but that must be quoted
+        let s={name:'fi',age:30,'firb babb':"shaik"};
+        alert(s.name,s.age,s.babb)
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop_down_menu</title>
+    <style>
+        .nav_bar{
+            display:flex;
+            justify-content:space-betweem;
+        }
+        .nav_bar li{
+            list-style-type:none;
+            border:1px solid black;
+        }
+        .nav_bar li ul{
+            display:none;
+            border:1px solid black;
+            padding:0;
+            margin:0;
+            padding:10px;
+            background-color:azure;
+
+        }
+        .nav_bar li:hover > ul{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav_bar">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3
+            <ul>
+                <li>sub_12</li>
+                <li>sub_23</li>
+                <li>sub_43</li>
+                <li>sub_56</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
